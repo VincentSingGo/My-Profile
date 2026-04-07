@@ -22,7 +22,7 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector("header nav a[href*=" + id + "]")
+          .querySelector('header nav a[href="#' + id + '"]')
           .classList.add("active");
       });
     }
@@ -67,7 +67,7 @@ document.getElementById("download").addEventListener("click", function () {
   //href
   downloadLink.download = "Vincent.Lei.pdf";
   downloadLink.type = "application/pdf";
-  downloadLink.href = "../pdf/Vincent.Lei.pdf";
+  downloadLink.href = "pdf/Vincent.Lei.pdf";
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
@@ -78,7 +78,7 @@ document.getElementById("downloadEn").addEventListener("click", function () {
   //href
   downloadLink.download = "Vincent.Lei_EN.pdf";
   downloadLink.type = "application/pdf";
-  downloadLink.href = "../pdf/Vincent.Lei_EN.pdf";
+  downloadLink.href = "pdf/Vincent.Lei_EN.pdf";
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
