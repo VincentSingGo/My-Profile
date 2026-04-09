@@ -464,7 +464,7 @@ span {
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: stretch;
     gap: 2.5rem;
 }
 
@@ -473,12 +473,13 @@ span {
     border-radius: 1.6rem;
     overflow: hidden;
     display: flex;
+    height: 25rem;
     border: 1px solid var(--glass-border);
 }
 
 .portfolio-box img {
     width: 100%;
-    height: 25rem;
+    height: 100%;
     object-fit: cover;
     transition: .5s ease;
 }
