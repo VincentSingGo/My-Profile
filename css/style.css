@@ -383,19 +383,21 @@ span {
     background: var(--main-gradient);
 }
 
+/* Tools: Pytest 95%, Playwright 90%, Postman/Newman 90%, K6 85%, Selenium/Appium 75%, Jenkins/Docker/K8s 85% */
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span { width: 95%; }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span { width: 90%; }
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span { width: 70%; }
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span { width: 65%; }
-.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span { width: 85%; }
-.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span { width: 65%; }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span { width: 90%; }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span { width: 85%; }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span { width: 75%; }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span { width: 85%; }
 
+/* Coding: Python 95%, Golang 80%, JavaScript 85%, HTML/CSS 90%, AI Agent 85%, POM 90% */
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span { width: 95%; }
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span { width: 90%; }
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span { width: 95%; }
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span { width: 70%; }
-.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span { width: 40%; }
-.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span { width: 85%; }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span { width: 80%; }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span { width: 85%; }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span { width: 90%; }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span { width: 85%; }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span { width: 90%; }
 
 /* ==================== SERVICES / EXPERTISE ==================== */
 .services {
@@ -476,6 +478,8 @@ span {
 
 .portfolio-box img {
     width: 100%;
+    height: 25rem;
+    object-fit: cover;
     transition: .5s ease;
 }
 
@@ -489,7 +493,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(10, 15, 26, 0.1), rgba(6, 182, 212, 0.85));
+    background: rgba(10, 15, 26, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,13 +519,13 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
-    color: var(--bg-color);
+    color: #fff;
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    color: var(--bg-color);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .portfolio-layer a {
